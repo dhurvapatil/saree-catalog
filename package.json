@@ -1,0 +1,11 @@
+{
+  "name": "saree-catalog-monorepo",
+  "private": true,
+  "workspaces": ["frontend", "telegram-bot"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=telegram-bot\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
